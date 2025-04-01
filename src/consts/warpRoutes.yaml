@@ -1,0 +1,22 @@
+# A list of Warp Route token configs
+# These configs will be merged with the warp routes in the configured registry
+# The input here is typically the output of the Hyperlane CLI warp deploy command
+---
+tokens:
+  - addressOrDenom: "0xF7C0Df31db7B6036DB9932aef1Ef4C89EF453fB9"
+    chainName: bsctestnet
+    connections:
+      - token: ethereum|sepolia|0xE6ED1c3a5603ac42F5516F48377C8e8657544bE5
+    decimals: 18
+    name: BNB
+    standard: EvmHypNative
+    symbol: BNB
+  - addressOrDenom: "0xE6ED1c3a5603ac42F5516F48377C8e8657544bE5"
+    chainName: sepolia
+    connections:
+      - token: ethereum|bsctestnet|0xF7C0Df31db7B6036DB9932aef1Ef4C89EF453fB9
+    decimals: 18
+    name: BNB
+    standard: EvmHypSynthetic
+    symbol: BNB
+options: {}
